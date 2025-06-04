@@ -40,6 +40,7 @@ ktor-negotiation = { group = "io.ktor", name = "ktor-client-content-negotiation"
 ktor-logging = { group = "io.ktor", name = "ktor-client-logging", version.ref = "ktor" }
 koin-bom = { module = "io.insert-koin:koin-bom", version.ref = "koin_version" }
 koin-core = { module = "io.insert-koin:koin-core" }
+koin-compose-navigation = { module = "io.insert-koin:koin-androidx-compose-navigation" }
 coil-compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coil_version" }
 navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "nav_version" }
 

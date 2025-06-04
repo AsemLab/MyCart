@@ -73,6 +73,7 @@ dependencies {
     // Koin
     implementation(platform(libs.koin.bom))
     implementation(libs.koin.core)
+    implementation(libs.koin.compose.navigation)
 
     // Coil
     implementation(libs.coil.compose)
