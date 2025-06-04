@@ -1,6 +1,7 @@
 package com.asemlab.mycart.di
 
 import com.asemlab.mycart.MainViewModel
+import com.asemlab.mycart.data.ProductDao
 import com.asemlab.mycart.remote.ProductsService
 import com.asemlab.mycart.remote.ProductsServiceImp
 import com.asemlab.mycart.remote.Routes
@@ -42,7 +43,7 @@ val networkModule = module {
     }
 
     single<ProductsRepository> {
-        ProductsRepository(get<ProductsService>())
+        ProductsRepository(get<ProductsService>(), get<ProductDao>())
     }
 
     viewModel { MainViewModel(get<ProductsRepository>()) }

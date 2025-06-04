@@ -1,6 +1,7 @@
 package com.asemlab.mycart.base
 
 import android.app.Application
+import com.asemlab.mycart.di.databaseModule
 import com.asemlab.mycart.di.networkModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -14,7 +15,7 @@ class MyCartApp : Application() {
         startKoin {
             androidLogger()
             androidContext(this@MyCartApp)
-            modules(networkModule)
+            modules(networkModule, databaseModule)
         }
     }
 }
